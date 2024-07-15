@@ -8,6 +8,10 @@
   height: 600vh;
 } */
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -261,7 +265,7 @@ nav ul li a {
   background-size: cover;
   background-position: bottom center;
   background-repeat: no-repeat;
-  padding: 40px 00px;
+  padding: 40px 0px;
 }
 .quote-div p {
   text-shadow: 1px 1px black;
@@ -327,6 +331,79 @@ nav ul li a {
   transition: 0.5s ease;
 }
 
+/* People's Section */
+
+.employees-container {
+  display: flex;
+  /* justify-content: space-evenly; */
+  justify-content: center;
+  padding: 40px 20px 60px 20px;
+  gap: 1.5em;
+  flex-wrap: wrap;
+  font-family: "Poppins", sans-serif;
+}
+.employee-header-text {
+  padding: 0 40px;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 1.7em;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 1200px;
+}
+
+.employee-header-text h2 {
+  font-size: 2.8em;
+  font-weight: 400;
+}
+
+.employees {
+  border-radius: 5px;
+  margin: 20px 30px;
+  /* width: fit-content; */
+  width: 400px;
+  height: 600px;
+  background-color: rgb(247, 247, 247);
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+  box-shadow: 5px 5px 100px 5px rgba(0, 0, 0, 0.12),
+    0 2px 2px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.12),
+    0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12);
+}
+
+.employee-1 .employees-img {
+  border-radius: 5px;
+  height: 60%;
+  background-image: url("./img/ivo.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.employee-2 .employees-img {
+  border-radius: 5px;
+  background-image: url("./img/abdul.jpg");
+  height: 60%;
+  background-size: cover;
+  background-position: center;
+}
+.employee-3 .employees-img {
+  border-radius: 5px;
+  height: 60%;
+  background-image: url("./img/jackey.jpg");
+  background-size: cover;
+  background-position: top center;
+}
+
+.employees-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 10px;
+  /* gap: 1em; */
+  height: 40%;
+}
+.employees-description h3 {
+  font-size: 1.5em;
+}
 /* Footer */
 
 footer {

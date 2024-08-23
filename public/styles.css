@@ -16,8 +16,8 @@ header {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
-  padding: 40px 0;
-  background-color: rgb(247, 255, 251);
+  padding: 20px 0;
+  background-color: #2d3974;
 
   /* user-select: none; */
 }
@@ -28,7 +28,7 @@ header nav {
   /* padding: 25px 25px; */
   font-size: 0.9rem;
   letter-spacing: 0.09em;
-  max-width: 1040px;
+  /* max-width: 1040px; */
   margin: 0 auto;
 }
 .desktop-nav {
@@ -38,25 +38,29 @@ header nav {
   /* gap: 3.5em; */
   justify-content: flex-end;
   align-items: center;
-  font-size: 1.05em;
+  font-size: 1.1em;
 
   /* border: 2px solid black; */
 }
 .desktop-nav li img {
-  width: 100px;
+  width: 220px;
+  background-color: white;
+  padding: 18px 10px;
+  border-radius: 50px;
 }
 .desktop-nav li:first-child {
   margin-right: auto;
 }
 .desktop-links:not(:first-child) {
-  padding: 0 10px;
+  padding: 0 30px;
 }
 nav ul li {
   list-style-type: none;
 }
 nav ul li a {
   text-decoration: none;
-  color: black;
+  color: #ffffff;
+  font-weight: 600;
 }
 
 .desktop-links:last-child {

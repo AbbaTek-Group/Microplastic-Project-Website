@@ -1,17 +1,20 @@
 const express = require("express");
 const app = express();
-const morgan  = require('morgan')
+const morgan = require("morgan");
+const nodemailer = require("nodemailer");
 
 app.listen(3000);
 
-app.use(morgan('dev'))
+// Middleware setup
+app.set("view engine", "ejs");
+app.use(morgan("dev"));
 app.use(express.static("public"));
 app.use(express.static("public/img"));
 
 app.get("/", (req, res) => {
-  res.sendFile("./views/index.html", { root: __dirname });
+  res.render("index");
 });
 
 app.use((req, res) => {
-  res.status(404).sendFile("./views/404.html", { root: __dirname });
+  res.status(404).render("404");
 });

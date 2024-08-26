@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.banner-container {
+  padding: 30px 40px 0 40px;
+  /* background-color: #5854ac; */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("./public/img/studio-background-concept-abstract-empty-light-gradient-purple-studio-room-background-product.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* color: black; */
+  color: white;
+  /* max-width: 1800px; */
+  margin: 0 auto;
+}
+
+.banner-container img.mp-connect {
+  height: 80px;
+  border-radius: 30px;
+  background-color: transparent;
+}
+.banner-info-container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2em;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.banner-text {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.banner-head-text h1 {
+  font-size: 5em;
+  font-weight: 300;
+  text-shadow: 1px 1px black;
+  /* color: rgb(109, 235, 224); */
+  color: yellow;
+}
+span.accurate {
+  font-weight: 500;
+  color: yellow;
+}
+
+.banner-sub-image img {
+  height: 650px;
+  background-color: transparent;
+  position: relative;
+  bottom: 70px;
+}
+
+.banner-info-container {
+  display: flex;
+}
+
+.banner-text a {
+  font-size: 1.3em;
+  margin-top: 20px;
+  width: fit-content;
+  background-color: rgb(73, 255, 231);
+  padding: 16px 12px;
+  color: rgb(0, 0, 0);
+  list-style-type: none;
+  text-decoration: none;
+  border-radius: 12px;
+  transition: 0.5s all ease;
+}
+.banner-text a:hover {
+  scale: 1.1;
+  transition: 0.5s all ease;
+}
+
+.banner-text p {
+  color: #eeeeee;
+}

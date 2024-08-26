@@ -1,12 +1,12 @@
 * {
   margin: 0;
   padding: 0;
-  /* user-select: none; */
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-/* body {
-  height: 600vh;
-} */
+body {
+  min-height: 100vh;
+}
 
 html {
   scroll-behavior: smooth;
@@ -17,18 +17,20 @@ header {
   font-weight: 400;
   font-style: normal;
   padding: 20px 0;
-  background-color: #2d3974;
+  /* background-color: #1d1e70; */
+  /* background-color: #2224bb; */
+  /* background-color: #6611d4; */
+  /* background-color: #8c1bbd; */
+  background-color: rgb(47, 23, 147);
 
   /* user-select: none; */
 }
 
 header nav {
   padding: 0 40px;
-  /* height: 100px; */
-  /* padding: 25px 25px; */
+
   font-size: 0.9rem;
   letter-spacing: 0.09em;
-  /* max-width: 1040px; */
   margin: 0 auto;
 }
 .desktop-nav {
@@ -134,55 +136,94 @@ nav ul li a {
   fill: white;
 }
 
-/* Banner Section */
-.banner-section {
-  padding: 0 40px 40px 40px;
-}
+/* ===== Banner Section ===== */
 .banner-container {
-  height: 700px;
-  width: 100%;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("ai-generated-8602262_1920.png");
-  background-size: cover;
+  padding: 30px 40px 0 40px;
+  /* background-color: #5854ac; */
+  background-image: linear-gradient(
+      rgba(47, 23, 147, 0.7),
+      rgba(47, 23, 147, 0.7)
+    ),
+    url("/img/studio-background-concept-abstract-empty-light-gradient-purple-studio-room-background-product.jpg");
   background-position: center;
-  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* color: black; */
+  color: white;
+  /* color: rgb(47, 23, 147); */
+  /* max-width: 1800px; */
+  margin: 0 auto;
+}
+
+.banner-container img.mp-connect {
+  height: 80px;
+  border-radius: 30px;
+  background-color: transparent;
 }
 .banner-info-container {
-  /* width: 70%; */
-  max-width: 1200px;
-  padding: 0 20px;
-  height: 70%;
   display: flex;
-  color: white;
-  font-size: 1.8em;
-  font-weight: 100;
+  justify-content: space-evenly;
+  gap: 2em;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.banner-text {
+  max-width: 600px;
+  display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  font-family: "Poppins";
+  gap: 1em;
 }
 
-.banner-info-container h1 {
-  font-size: 1.6em;
-  font-weight: 400;
-}
-.banner-learn-more a {
-  /* list-style: none; */
-  color: black;
-  text-decoration: none;
-  background-color: rgb(255, 255, 255);
-  padding: 15px 20px;
+.banner-head-text h1 {
+  font-size: 5em;
   font-weight: 300;
-  font-size: 0.75em;
-  border-radius: 5px;
-  transition: 0.5s ease;
+  text-shadow: 1px 1px black;
+  /* color: rgb(109, 235, 224); */
+  color: yellow;
+}
+/* span.accessible {
+  font-weight: 500;
+  color: #52abff;
+} */
+span.accurate {
+  font-weight: 500;
+  color: yellow;
+}
+/* span.actionable {
+  font-weight: 500;
+  color: #e0e0e0;
+} */
+
+.banner-sub-image img {
+  height: 650px;
+  background-color: transparent;
+  position: relative;
+  bottom: 70px;
 }
 
-.banner-learn-more a:hover {
-  background-color: rgb(221, 221, 221);
-  transition: 0.5s ease;
+.banner-info-container {
+  display: flex;
+}
+
+.banner-text a {
+  font-size: 1.3em;
+  margin-top: 20px;
+  width: fit-content;
+  background-color: rgb(73, 255, 231);
+  padding: 16px 12px;
+  color: rgb(0, 0, 0);
+  list-style-type: none;
+  text-decoration: none;
+  border-radius: 12px;
+  transition: 0.5s all ease;
+}
+.banner-text a:hover {
+  scale: 1.1;
+  transition: 0.5s all ease;
+}
+
+.banner-text p {
+  color: #eeeeee;
 }
 
 /* About Us Section */
@@ -641,11 +682,11 @@ footer {
 
 /* Responsive  */
 
-@media screen and (max-width: 1400px) {
+/* @media screen and (max-width: 1400px) {
   .banner-info-container {
     font-size: 140%;
   }
-}
+} */
 @media screen and (max-width: 1000px) {
   /* Navbar Section */
   .desktop-links:not(:last-child) {
@@ -712,7 +753,7 @@ footer {
 }
 
 @media screen and (max-width: 900px) {
-  .banner-info-container {
+  /* .banner-info-container {
     font-size: 120%;
   }
   .banner-section {
@@ -721,7 +762,7 @@ footer {
   .banner-info-container {
     height: 75%;
     font-size: 110%;
-  }
+  } */
   .quote-div {
     font-size: 80%;
   }

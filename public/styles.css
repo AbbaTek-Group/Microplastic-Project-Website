@@ -140,18 +140,17 @@ nav ul li a {
 .banner-container {
   padding: 30px 40px 0 40px;
   /* background-color: #5854ac; */
-  background-image: linear-gradient(
+  background-color: #2f1793;
+  /* background-image: linear-gradient(
       rgba(47, 23, 147, 0.7),
       rgba(47, 23, 147, 0.7)
     ),
-    url("/img/studio-background-concept-abstract-empty-light-gradient-purple-studio-room-background-product.jpg");
+    url("/img/studio-background-concept-abstract-empty-light-gradient-purple-studio-room-background-product.jpg"); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* color: black; */
   color: white;
-  /* color: rgb(47, 23, 147); */
-  /* max-width: 1800px; */
+
   margin: 0 auto;
 }
 

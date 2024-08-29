@@ -490,6 +490,172 @@ span.accurate {
   width: 400px;
 }
 
+/* ===== Our Team CSS ===== */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4em 1em 4em 1em;
+  text-align: center;
+  justify-content: center;
+  gap: 1.6em;
+}
+.row.profiles {
+  padding: 0em 1em 8em 1em;
+}
+.column {
+  width: 600px;
+  padding: 0.5em 0;
+}
+.row h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 3.5em;
+  color: #8772ff;
+}
+.card {
+  box-shadow: 0 0 2.4em rgba(25, 0, 58, 0.1);
+  padding: 3.5em 1em;
+  border-radius: 0.6em;
+  color: #1f003b;
+  /* cursor: pointer; */
+  transition: 0.3s;
+  background-color: #ffffff;
+  transition: 0.3s all ease;
+}
+.card .img-container {
+  box-sizing: border-box;
+  width: 12em;
+  height: 12em;
+  /* background-color: #a993ff; */
+  outline: 2px solid rgb(128, 73, 255);
+  padding: 0.5em;
+  border-radius: 50%;
+  margin: 0 auto 2em auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.5s all ease;
+}
+.img-container.img-1 {
+  background-image: url("/img/IA.jpeg");
+}
+.img-container.img-2 {
+  background-image: url("/img/abdul.jpg");
+  background-position: right;
+}
+.img-container.img-3 {
+  background-image: url("/img/jackey.jpg");
+  background-position: top;
+}
+
+.card h3 {
+  font-weight: 500;
+  font-size: 1.8em;
+  color: #563af3;
+}
+.card p {
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0.5em 0 2em 0;
+  letter-spacing: 2px;
+}
+.icons {
+  width: 50%;
+  min-width: 180px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+}
+.card a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.7em;
+}
+.card:hover {
+  background: linear-gradient(#6045ea, #8567f7);
+  color: #ffffff;
+  transition: 0.3s all ease;
+}
+.card:hover .img-container {
+  transform: scale(1.15);
+  transition: 0.5s all ease;
+}
+
+.our-team-section hr {
+  width: 90%;
+  margin: 0 auto 50px auto;
+}
+
+/* AbbaTek slideshow Styles */
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.partner-section {
+  max-width: 1500px;
+  margin: 0 auto;
+  font-family: "Poppins";
+  padding: 20px 30px 00px 30px;
+}
+.partner-section h2 {
+  text-align: center;
+  font-weight: 800;
+  font-size: 3em;
+  color: #8772ff;
+}
+.logos {
+  overflow: hidden;
+  padding: 40px 0;
+  background: white;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 15%;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 20s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 140px;
+  margin: 0 40px;
+}
+
 /* Quote Section */
 
 .quote-div {
@@ -515,77 +681,77 @@ span.accurate {
   color: white;
 }
 
-/* Footer */
+/* Need Our Service CSS*/
 
-footer {
-  background-color: rgb(41, 41, 41);
-  padding: 20px 0 90px 0;
-}
-
-.footer-container {
-  max-width: 1200px;
+.contact-container {
+  display: flex;
+  max-width: 1300px;
+  justify-content: space-between;
+  align-items: center;
   margin: 0 auto;
-  padding: 60px 20px;
-  display: flex;
-  /* justify-content: space-between; */
-  font-family: "Poppins";
-  /* gap: 0em; */
-  color: white;
+  padding: 112px 0;
 }
 
-.footer-left {
-  width: 60%;
-  display: flex;
-  gap: 1em;
-  margin-top: 20px;
-  flex-shrink: 0;
-}
-
-.footer-left-image {
-  width: 20%;
-}
-
-.footer-left-image img {
-  width: 100%;
-}
-
-.footer-left-text {
-  width: 65%;
-}
-.footer-left-text p {
-  width: fit-content;
-}
-
-.footer-right {
-  flex-shrink: 1;
-  width: 40%;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.our-work,
-.follow {
+.main-contact-form {
+  border: 1px solid black;
   display: flex;
   flex-direction: column;
-  gap: 0.5em;
+  max-width: 500px;
+  width: 100%;
+  padding: 48px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 5px 5px 100px 5px rgba(0, 0, 0, 0.07),
+    0 2px 2px rgba(0, 0, 0, 0.07), 0 4px 4px rgba(0, 0, 0, 0.07),
+    0 8px 8px rgba(0, 0, 0, 0.07), 0 16px 16px rgba(0, 0, 0, 0.07);
 }
-.our-work p,
-.follow p {
-  margin-bottom: 5px;
-  font-weight: 700;
+.main-contact-form h3 {
+  text-align: center;
+  font-size: 1.6em;
+  /* font-size: 24px; */
+  font-weight: 400;
+  margin-bottom: 30px;
 }
-.our-work a,
-.follow a {
+.main-contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.main-contact-form form input,
+.main-contact-form form textarea {
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid #c5c5c5;
+  font-size: 1em;
+}
+.main-contact-form form textarea {
+  min-height: 120px;
+}
+.main-contact-form form input:focus,
+.main-contact-form form textarea:focus {
+  outline: none;
+  background-color: white;
+}
+.main-contact-form button {
+  padding: 12px 16px;
+  font-size: 1em;
   color: white;
+  background-color: #9b51e0;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.5s ease all;
 }
 
-/* Responsive  */
+.main-contact-form button:hover {
+  background-color: #b56ef8;
+  transition: 0.5s ease all;
+}
 
-/* @media screen and (max-width: 1400px) {
-  .banner-info-container {
-    font-size: 140%;
-  }
-} */
+.contact-img-container img {
+  width: 600px;
+}
 
 @media screen and (max-width: 1000px) {
   /* Navbar Section */
@@ -594,37 +760,5 @@ footer {
   }
   .desktop-links:last-child {
     display: block;
-  }
-}
-
-@media screen and (max-width: 900px) {
-}
-@media screen and (max-width: 820px) {
-  /* Footer  */
-
-  .footer-container {
-    /* padding: 60px 20px; */
-    flex-direction: column-reverse;
-    gap: 2em;
-  }
-
-  .footer-left {
-    width: 100%;
-    flex-direction: column;
-  }
-  .footer-left-text,
-  .footer-left-image {
-    width: 100%;
-    display: flex;
-  }
-
-  .footer-left-image img {
-    /* width: 40%; */
-    width: 230px;
-    margin: 0 auto;
-  }
-
-  .footer-right {
-    width: 100%;
   }
 }

@@ -138,30 +138,25 @@ nav ul li a {
 
 /* ===== Banner Section ===== */
 .banner-container {
-  padding: 30px 40px 0 40px;
+  padding: 30px 40px 30px 40px;
   /* background-color: #5854ac; */
   background-color: #2f1793;
   /* background-image: linear-gradient(
-      rgba(47, 23, 147, 0.7),
-      rgba(47, 23, 147, 0.7)
-    ),
-    url("/img/studio-background-concept-abstract-empty-light-gradient-purple-studio-room-background-product.jpg"); */
+        rgba(47, 23, 147, 0.7),
+        rgba(47, 23, 147, 0.7)
+      ),
+      url("/img/studio-background-concept-abstract-empty-light-gradient-purple-studio-room-background-product.jpg"); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-
   margin: 0 auto;
 }
 
-.banner-container img.mp-connect {
-  height: 80px;
-  border-radius: 30px;
-  background-color: transparent;
-}
 .banner-info-container {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   gap: 2em;
   max-width: 1600px;
   margin: 0 auto;
@@ -181,23 +176,25 @@ nav ul li a {
   color: yellow;
 }
 /* span.accessible {
-  font-weight: 500;
-  color: #52abff;
-} */
+    font-weight: 500;
+    color: #52abff;
+  } */
 span.accurate {
   font-weight: 500;
   color: yellow;
 }
 /* span.actionable {
-  font-weight: 500;
-  color: #e0e0e0;
-} */
+    font-weight: 500;
+    color: #e0e0e0;
+  } */
 
-.banner-sub-image img {
-  height: 650px;
+.banner-sub-image {
+  /* height: 650px; */
   background-color: transparent;
-  position: relative;
-  bottom: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .banner-info-container {
@@ -226,7 +223,6 @@ span.accurate {
 }
 
 /* What Makes us Unique CSS */
-
 .unique-section {
   padding: 100px 80px;
 }
@@ -376,8 +372,7 @@ span.accurate {
   font-size: 1em;
 }
 
-/* MVV CSS */
-
+/* ===== MVV CSS ===== */
 .mvv-section {
   padding: 80px 40px;
 }
@@ -592,7 +587,7 @@ span.accurate {
   margin: 0 auto 50px auto;
 }
 
-/* AbbaTek slideshow Styles */
+/* ===== AbbaTek Partners Styles ===== */
 
 @keyframes slide {
   from {
@@ -656,17 +651,17 @@ span.accurate {
   margin: 0 40px;
 }
 
-/* Quote Section */
+/* ===== Quote Section ===== */
 
 .quote-div {
-  height: 600px;
+  /* height: 600px; */
   display: flex;
   justify-content: flex-end;
   align-items: center;
   text-align: center;
   font-family: "Poppins";
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("quote-background.jpg");
+    url("/img/quote-background.jpg");
 
   background-size: cover;
   background-position: bottom center;
@@ -689,7 +684,7 @@ span.accurate {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  padding: 112px 0;
+  padding: 112px 30px;
 }
 
 .main-contact-form {
@@ -753,12 +748,345 @@ span.accurate {
   width: 600px;
 }
 
+/* Footer */
+
+.footer-container {
+  line-height: 1.5;
+  max-width: 1170px;
+  margin: auto;
+}
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-col ul {
+  list-style: none;
+}
+.footer {
+  background-color: #000000;
+  padding: 70px 0;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #9254f5;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  font-size: 16px;
+
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: #a69dff;
+  padding-left: 8px;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+  /* color: #24262b; */
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/* ===== Responsive Layouts ===== */
+
+@media screen and (max-width: 1300px) {
+  /* ===== Features and Services CSS ===== */
+  .services {
+    font-size: 90%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  /* ===== Banner CSS ===== */
+  .banner-info-container {
+    /* flex-direction: column; */
+    font-size: 90%;
+    text-align: center;
+  }
+  .banner-sub-image img {
+    align-self: center;
+    margin: 0 auto;
+    width: 500px;
+  }
+  .banner-text {
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  /* ===== Features and Services CSS ===== */
+  .main-services {
+    flex-direction: column;
+    align-items: center;
+  }
+  .services {
+    font-size: 110%;
+    max-width: 600px;
+  }
+
+  .services img {
+    width: 350px;
+  }
+  .service-header {
+    font-size: 130%;
+  }
+
+  /* ===== MVV CSS =====  */
+  .mvv-container {
+    font-size: 90%;
+  }
+
+  /* ===== Need Our Service CSS ===== */
+  .contact-container {
+    flex-direction: column;
+    gap: 2em;
+  }
+}
+
 @media screen and (max-width: 1000px) {
+  /* ===== Banner CSS ===== */
+  .banner-info-container {
+    flex-direction: column;
+    font-size: 100%;
+  }
+  .banner-sub-image img {
+    width: 100%;
+  }
+
+  /* ===== MVV CSS =====  */
+  .mvv-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+  }
+  .for-border {
+    display: none;
+  }
+
+  .mvv-each i:last-child {
+    display: none;
+  }
+  .vision .mvv-logo {
+    border: none;
+  }
+  .mvv-each {
+    border-bottom: 1px solid black;
+  }
+  .mvv-each p {
+    margin-bottom: 40px;
+  }
+
+  /* ===== Newsletter CSS */
+
+  .newsletter-container {
+    flex-direction: column-reverse;
+    gap: 0;
+    font-size: 90%;
+  }
+  .newsletter-content {
+    padding: 30px 30px 10px 30px;
+  }
+
+  /* ===== Our Team CSS ===== */
+  .our-team-section {
+    padding: 1em;
+  }
+  .card {
+    padding: 5em 1em;
+  }
+  /* .column {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 0 1em;
+  } */
+
   /* Navbar Section */
   .desktop-links:not(:last-child) {
     display: none;
   }
   .desktop-links:last-child {
     display: block;
+  }
+
+  /* Quote Section */
+  .quote-div {
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  /* ===== Footer CSS ===== */
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  /* ===== Banner CSS ===== */
+  .banner-info-container {
+    font-size: 90%;
+  }
+
+  /* ===== Unique CSS ===== */
+  .unique-section {
+    padding: 100px 20px;
+  }
+
+  /* ===== Newsletter CSS  =====*/
+
+  .newsletter-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  .newsletter-form form button {
+    width: fit-content;
+  }
+
+  /* ===== Our Team CSS ===== */
+  /* .our-team-section {
+    padding: 1em 7em;
+  } */
+
+  /* ===== Quote CSS ===== */
+  .quote-div {
+    background-position: 25%;
+    padding: 40px 30px;
+  }
+  .quote-div p {
+    width: 100%;
+  }
+
+  /* ===== Contact CSS ===== */
+  .contact-img-container {
+    display: flex;
+    justify-content: center;
+  }
+  .contact-img-container img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  /* Navbar CSS */
+  .desktop-links:last-child {
+    margin: 0;
+    padding: 0;
+  }
+  .desktop-nav li a img {
+    padding: 14px 8px;
+    width: 170px;
+  }
+
+  /* ===== Banner CSS ===== */
+  .banner-container {
+    padding: 30px 20px 30px 20px;
+  }
+  .banner-info-container {
+    font-size: 80%;
+  }
+
+  /* ===== Unique CSS ===== */
+  .unique-header {
+    font-size: 115%;
+  }
+  .unique {
+    font-size: 100%;
+    height: 300px;
+  }
+
+  /* ===== Features and Services CSS ===== */
+  .services {
+    font-size: 85%;
+    max-width: 600px;
+    padding: 20px 20px;
+  }
+  .services img {
+    width: 90%;
+  }
+  .service-header {
+    font-size: 110%;
+  }
+
+  /* ===== Newsletter CSS ===== */
+  .newsletter-form form input {
+    width: 100%;
+  }
+  .leaf-image {
+    display: flex;
+    justify-content: center;
+  }
+  .leaf-image img {
+    width: 80%;
+  }
+
+  /* ===== Need Our Service CSS =====*/
+
+  .main-contact-form {
+    padding: 48px 20px;
+  }
+
+  /* ===== Footer CSS ===== */
+  .footer-col {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  /* ===== Banner CSS ===== */
+  .banner-info-container {
+    font-size: 70%;
+  }
+
+  /* ===== Features and Services CSS ===== */
+  .services {
+    font-size: 70%;
+  }
+
+  /* ===== MVV CSS =====  */
+  .mvv-container {
+    font-size: 90%;
+  }
+
+  /* ===== Need Our Service CSS =====*/
+  .main-contact-form form,
+  .main-contact-form {
+    font-size: 90%;
   }
 }

@@ -1,3 +1,5 @@
-# MicroPlastic Website 
+# Running the Website on Local Server
 
-<p>Click here to see website -> <a href='https://abbatek-group.github.io/Microplastic-Project-Website/' target="_blank">Website Link</a></p>
+- Ensure you have node and npm installed
+- Head into the \TinyML-IoT-MPconnect\Software-Development directory, run npm install, then npm run start
+- The local server should work and running in your local server 3000
